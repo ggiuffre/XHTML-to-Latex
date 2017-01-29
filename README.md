@@ -3,11 +3,11 @@
 Everyone can contribute to this repository: feel free to add new features to the template and/or correcting mistakes.
 
 ### usage
-to convert your HTML page `mypage.html` into a Latex document, download the file `html_tex.xml` from  this repository and put it in the same folder of `mypage.html`. Then open a Linux-like command prompt and type `xsltproc --html html_tex.xml mypage.html > mydocument.tex`, where `mydocument.tex` is the name of your new Latex file.
+to convert your HTML page `mypage.html` into a Latex document, download the file `html_tex.xml` from  this repository and put it in the same folder of `mypage.html`. Then open a Linux-like command prompt and type `xsltproc --html html_tex.xml mypage.html > mypage.tex`, where `mypage.tex` is the name of your new Latex file.
 
-Now you can `\input{mydocument.tex}` or `\include{mydocument.tex}` in a Latex document.
+Now you can `\input{mypage.tex}` or `\include{mypage.tex}` in the body of a Latex document.
 
 To do:
-* generate the whole Latex document, not just a single file;
 * convert every HTML entity into its corresponding Latex symbol;
-* handle HTML tables.
+* handle HTML tables;
+* add an option for generating the whole Latex document, not only a single file.
